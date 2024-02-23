@@ -31,3 +31,14 @@ const header = document.querySelector('.header');
 window.addEventListener("scroll", function() {
     header.classList.toggle("sticky", this.scrollY > 140)
 })
+
+let fullscreen = document.querySelector(".fullscreen");
+let clos = document.querySelector(".clos");
+let iframe = fullscreen.querySelector("iframe");
+function openmaster(url){
+    fullscreen.style.left = "0";
+    iframe.src= url;
+}
+clos.onclick = () => {
+    fullscreen.style.left="100%";
+}

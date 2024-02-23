@@ -1,0 +1,84 @@
+.ff {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+}
+.ff h1{
+    color: #fff;
+}
+
+.mm {
+    display: flex;
+    flex-direction: column;
+}
+
+.mm a {
+    text-decoration: none;
+    color: green;
+    transition: all 0.6s ease;
+}
+
+.mm a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #fff;
+}
+
+table {
+    direction: rtl;
+    width: 100%;
+}
+
+body,
+div,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+p {
+    font-family: "Asiatech";
+    font-size: 1.2rem
+}
+
+a.comment-indicator:hover+comment {
+    background: #ffd;
+    position: absolute;
+    display: block;
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+a.comment-indicator {
+    background: red;
+    display: inline-block;
+    border: 1px solid black;
+    width: 0.5em;
+    height: 0.5em;
+}
+
+comment {
+    display: none;
+}
+@media (max-width:500px){
+    table{
+        width: 100%;
+    }
+    body,
+div,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+p{
+    font-size: .9rem;
+}
+}

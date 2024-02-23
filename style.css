@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-.header{
+
+.header {
     position: fixed;
     width: 100%;
     height: 50px;
@@ -17,7 +18,8 @@
     padding: 13px 8%;
     transition: all 0.5s ease;
 }
-.header::before{
+
+.header::before {
     content: '';
     top: 0;
     left: 0;
@@ -26,7 +28,8 @@
     width: 100%;
     height: 100%;
 }
-.header::after{
+
+.header::after {
     content: '';
     top: 0;
     left: -100%;
@@ -34,28 +37,34 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4),transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
     transition: all 0.5s ease;
 }
-.header:hover::after{
+
+.header:hover::after {
     left: 100%;
 }
+
 .header.sticky {
     background: rgba(0, 0, 0, 0.5);
-    padding:20px 15%;
+    padding: 20px 15%;
 }
-.logo{
+
+.logo {
     width: 50px;
 }
-.logo img{
+
+.logo img {
     width: 100%;
     transition: all 0.5s ease;
     cursor: pointer;
 }
-.logo img:hover{
+
+.logo img:hover {
     scale: 1.1;
 }
-.navbar a:is(:link, :active, :visited){
+
+.navbar a:is(:link, :active, :visited) {
     color: #000;
     font-size: 1.3rem;
     font-weight: bold;
@@ -64,30 +73,33 @@
     border-radius: 6px;
     transition: all 0.5s ease;
 }
-.navbar a:is(:link, :active, :visited).active{
-   /* From https://css.glass */
-background: rgba(66, 59, 59, 0.27);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.7px);
--webkit-backdrop-filter: blur(2.7px);
-border: 1px solid rgba(66, 59, 59, 0.66);
+
+.navbar a:is(:link, :active, :visited).active {
+    /* From https://css.glass */
+    background: rgba(66, 59, 59, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(66, 59, 59, 0.66);
 }
-.navbar a:hover{
-   /* From https://css.glass */
-background: rgba(66, 59, 59, 0.27);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.7px);
--webkit-backdrop-filter: blur(2.7px);
-border: 1px solid rgba(66, 59, 59, 0.66);
+
+.navbar a:hover {
+    /* From https://css.glass */
+    background: rgba(66, 59, 59, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+    border: 1px solid rgba(66, 59, 59, 0.66);
 }
 
 #menu,
-.closes{
+.closes {
     cursor: pointer;
     display: none;
 }
+
 .banner {
     background-image: url(./image/banner.png);
     width: 100%;
@@ -95,44 +107,50 @@ border: 1px solid rgba(66, 59, 59, 0.66);
     background-size: cover;
     background-position: center;
 }
-.box{
+
+.box {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     gap: 15px;
 }
-.box1{
+
+.box1 {
     width: 300px;
     height: 420px;
     /* From https://css.glass */
-background: rgba(66, 62, 62, 0.31);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.9px);
--webkit-backdrop-filter: blur(4.9px);
-border: 1px solid rgba(66, 62, 62, 0.15);
-margin: auto;
-transition: all 0.5s ease;
-padding: 20px;
-line-height: 70px;
+    background: rgba(66, 62, 62, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(66, 62, 62, 0.15);
+    margin: auto;
+    transition: all 0.5s ease;
+    padding: 20px;
+    line-height: 70px;
 }
-.box1:hover{
-   /* From https://css.glass */
-background: rgba(13, 5, 5, 0.31);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(13.1px);
--webkit-backdrop-filter: blur(13.1px);
-border: 1px solid rgba(13, 5, 5, 0.15);
+
+.box1:hover {
+    /* From https://css.glass */
+    background: rgba(13, 5, 5, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.1px);
+    -webkit-backdrop-filter: blur(13.1px);
+    border: 1px solid rgba(13, 5, 5, 0.15);
 }
-.box1 img{
+
+.box1 img {
     transition: all 0.5s ease;
     cursor: pointer;
 }
-.box1 img:hover{
+
+.box1 img:hover {
     scale: 1.1;
 }
-.recent-photo{
+
+.recent-photo {
     position: relative;
     margin: auto;
     width: 100%;
@@ -141,41 +159,142 @@ border: 1px solid rgba(13, 5, 5, 0.15);
     overflow: hidden;
     top: 20px;
 }
-.track{
+
+.track {
     display: flex;
     width: calc(250px * 18);
     animation: scroll 30s linear infinite;
     overflow: hidden;
     gap: 15px;
 }
-.track:hover{
+
+.track:hover {
     animation-play-state: paused;
 }
-@keyframes scroll{
-    0%{
+
+@keyframes scroll {
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-1600px);
     }
 }
 
-.track img{
+.track img {
     width: 350px;
-            height: 250px;
-            object-fit: cover;
-            transition: all 0.4s ease;
-            cursor: pointer;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    cursor: pointer;
 
 }
-.track img:hover{
+
+.track img:hover {
     transform: scale(1.2);
 }
-@media (max-width:768px){
-    #menu{
+
+
+footer {
+    width: 100%;
+    height: 60vh;
+    margin-top: 30px;
+    background: rgba(58, 55, 55, 0.89);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(58, 55, 55, 0.47);
+    text-align: center;
+    gap: 20px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.social-media a img {
+    transition: all 0.5s ease;
+    filter: brightness(0.5);
+}
+
+.social-media a img:hover {
+    scale: 1.3;
+    filter: brightness(1);
+}
+
+.master {
+    background-image: url(./image/cool-background\ \(1\).png);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.master-box {
+    width: 350px;
+    height: 400px;
+    background: rgba(58, 55, 55, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(58, 55, 55, 0.38);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-align: center;
+    line-height: 400px;
+    color: #fff;
+    font-family: Asiatech;
+}
+
+.master-box:hover {
+    /* From https://css.glass */
+    background: rgba(214, 87, 87, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border: 1px solid rgba(214, 87, 87, 0.38);
+}
+
+.fullscreen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 100%;
+    background: rgba(64, 43, 214, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border: 1px solid rgba(64, 43, 214, 0.38);
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+.clos{
+    position: absolute;
+    color: red;
+    right: 5px;
+    top: 0;
+    font-size: 40px;
+    cursor: pointer;
+}
+iframe{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    #menu {
         display: block;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         top: 100%;
         display: flex;
@@ -183,20 +302,21 @@ border: 1px solid rgba(13, 5, 5, 0.15);
         width: 100%;
         transition: all 0.5s ease;
         left: 100%;
-        /* From https://css.glass */
-background: rgba(17, 4, 4, 0.31);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(13.1px);
--webkit-backdrop-filter: blur(13.1px);
-border: 1px solid rgba(17, 4, 4, 0.22);
+        background: rgba(17, 4, 4, 0.31);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.1px);
+        -webkit-backdrop-filter: blur(13.1px);
+        border: 1px solid rgba(17, 4, 4, 0.22);
     }
-    .banner{
+
+    .banner {
         height: 300px;
     }
 }
-@media (max-width:450px){
-    .banner{
+
+@media (max-width:450px) {
+    .banner {
         height: 200px;
     }
 }
