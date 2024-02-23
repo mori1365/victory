@@ -14,7 +14,8 @@
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    padding: 8px 8%;
+    padding: 13px 8%;
+    transition: all 0.5s ease;
 }
 .header::before{
     content: '';
@@ -41,7 +42,7 @@
 }
 .header.sticky {
     background: rgba(0, 0, 0, 0.5);
-    padding:20px 10%;
+    padding:20px 15%;
 }
 .logo{
     width: 50px;
@@ -93,4 +94,109 @@ border: 1px solid rgba(66, 59, 59, 0.66);
     height: 550px;
     background-size: cover;
     background-position: center;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 15px;
+}
+.box1{
+    width: 300px;
+    height: 420px;
+    /* From https://css.glass */
+background: rgba(66, 62, 62, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.9px);
+-webkit-backdrop-filter: blur(4.9px);
+border: 1px solid rgba(66, 62, 62, 0.15);
+margin: auto;
+transition: all 0.5s ease;
+padding: 20px;
+line-height: 70px;
+}
+.box1:hover{
+   /* From https://css.glass */
+background: rgba(13, 5, 5, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.1px);
+-webkit-backdrop-filter: blur(13.1px);
+border: 1px solid rgba(13, 5, 5, 0.15);
+}
+.box1 img{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.box1 img:hover{
+    scale: 1.1;
+}
+.recent-photo{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    top: 20px;
+}
+.track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 30s linear infinite;
+    overflow: hidden;
+    gap: 15px;
+}
+.track:hover{
+    animation-play-state: paused;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1600px);
+    }
+}
+
+.track img{
+    width: 350px;
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.4s ease;
+            cursor: pointer;
+
+}
+.track img:hover{
+    transform: scale(1.2);
+}
+@media (max-width:768px){
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        transition: all 0.5s ease;
+        left: 100%;
+        /* From https://css.glass */
+background: rgba(17, 4, 4, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.1px);
+-webkit-backdrop-filter: blur(13.1px);
+border: 1px solid rgba(17, 4, 4, 0.22);
+    }
+    .banner{
+        height: 300px;
+    }
+}
+@media (max-width:450px){
+    .banner{
+        height: 200px;
+    }
 }
